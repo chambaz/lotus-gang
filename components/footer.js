@@ -10,7 +10,7 @@ const Footer = () => {
     document.addEventListener(
       'scroll',
       throttle(() => {
-        if (window.scrollY > 80) {
+        if (window.outerWidth < 860 && window.scrollY > 80) {
           setShowPinnedCharacter(false)
         } else {
           setShowPinnedCharacter(true)
@@ -95,7 +95,7 @@ const Footer = () => {
         </div>
       </footer>
       <div
-        className="fixed bottom-0 right-0 z-10 flex w-56 transition duration-500 pointer-events-none md:w-96 lg:w-auto"
+        className="fixed bottom-0 right-0 z-10 flex w-56 transition duration-500 pointer-events-none lg:w-96 xl:w-auto"
         style={{
           transform: showPinnedCharacter ? 'translateY(0)' : 'translateY(50vh)',
         }}>

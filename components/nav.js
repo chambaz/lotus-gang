@@ -11,7 +11,7 @@ const Nav = () => {
   return (
     <>
       <div className="fixed top-0 z-50 w-screen shadow-lg bg-lotus-beige shadow-lotus-beige">
-        <div className="flex items-center px-8 py-4 xl:container xl:mx-auto">
+        <div className="flex items-center px-8 py-4 2xl:container 2xl:mx-auto">
           <Link href="/" passHref>
             <a className="cursor-pointer">
               <Image src="/img/lotus.svg" width={50} height={50} />
