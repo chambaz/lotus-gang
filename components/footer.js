@@ -102,16 +102,15 @@ const Footer = () => {
         </div>
       </footer>
       <div
-        className="fixed bottom-0 right-0 z-10 flex transition duration-1000 opacity-0 pointer-events-none w-52 md:w-96 xl:w-auto"
+        className="fixed bottom-0 right-0 z-10 flex transition duration-1000 opacity-0 pointer-events-none w-60 md:w-1/3"
         style={{
           transform: showPinnedCharacter ? 'translateY(0)' : 'translateY(50vh)',
           opacity: showCharacter ? 1 : 0,
         }}>
-        <Image
+        <img
           src="/img/character-fpo.png"
-          width={548}
-          height={759}
-          className="w-auto"
+          className="object-contain w-full"
+          style={{ maxHeight: window.outerHeight - 200 }}
         />
       </div>
     </>
