@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { HiMenuAlt1 } from 'react-icons/hi'
@@ -6,6 +6,7 @@ import { IoClose } from 'react-icons/io5'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
 const Nav = () => {
+  const [showNav, setShowNav] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const mobileMenuRef = useRef()
 
@@ -27,9 +28,17 @@ const Nav = () => {
     })
   }
 
+  useEffect(() => {
+    setTimeout(() => {
+      setShowNav(true)
+    }, 1000)
+  }, [])
+
   return (
     <>
-      <div className="fixed top-0 z-50 w-screen shadow-lg bg-lotus-beige shadow-lotus-beige">
+      <div
+        className="fixed top-0 z-50 w-screen transition duration-1000 shadow-lg bg-lotus-beige shadow-lotus-beige"
+        style={{ transform: showNav ? 'translateY(0)' : 'translateY(-100px)' }}>
         <div className="flex items-center px-8 py-4 2xl:container 2xl:mx-auto">
           <Link href="/" passHref>
             <a className="cursor-pointer">

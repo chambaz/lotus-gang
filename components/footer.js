@@ -4,7 +4,14 @@ import Image from 'next/image'
 import { throttle } from 'lodash'
 
 const Footer = () => {
+  const [showCharacter, setShowCharacter] = useState(false)
   const [showPinnedCharacter, setShowPinnedCharacter] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowCharacter(true)
+    }, 300)
+  }, [])
 
   useEffect(() => {
     document.addEventListener(
@@ -95,9 +102,10 @@ const Footer = () => {
         </div>
       </footer>
       <div
-        className="fixed bottom-0 right-0 z-10 flex transition duration-500 pointer-events-none w-52 md:w-96 xl:w-auto"
+        className="fixed bottom-0 right-0 z-10 flex transition duration-1000 opacity-0 pointer-events-none w-52 md:w-96 xl:w-auto"
         style={{
           transform: showPinnedCharacter ? 'translateY(0)' : 'translateY(50vh)',
+          opacity: showCharacter ? 1 : 0,
         }}>
         <Image
           src="/img/character-fpo.png"
