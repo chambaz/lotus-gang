@@ -78,8 +78,13 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="fixed bottom-0 right-0 z-10 hidden lg:flex">
-        <Image src="/img/character-fpo.png" width={548} height={759} />
+      <div className="fixed bottom-0 right-0 z-10 flex w-56 md:w-96 lg:w-auto">
+        <Image
+          src="/img/character-fpo.png"
+          width={548}
+          height={759}
+          className="w-auto"
+        />
       </div>
     </>
   )
