@@ -1,7 +1,23 @@
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { throttle } from 'lodash'
 
 const Footer = () => {
+  const [showPinnedCharacter, setShowPinnedCharacter] = useState(true)
+
+  useEffect(() => {
+    document.addEventListener(
+      'scroll',
+      throttle(() => {
+        if (window.scrollY > 80) {
+          setShowPinnedCharacter(false)
+        } else {
+          setShowPinnedCharacter(true)
+        }
+      }, 100)
+    )
+  }, [])
   return (
     <>
       <footer className="w-screen py-6 mt-16 bg-lotus-red">
@@ -78,7 +94,11 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="fixed bottom-0 right-0 z-10 flex w-56 md:w-96 lg:w-auto">
+      <div
+        className="fixed bottom-0 right-0 z-10 flex w-56 transition duration-500 pointer-events-none md:w-96 lg:w-auto"
+        style={{
+          transform: showPinnedCharacter ? 'translateY(0)' : 'translateY(50vh)',
+        }}>
         <Image
           src="/img/character-fpo.png"
           width={548}
