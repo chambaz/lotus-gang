@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'pixelmix-regular';
+  src: url('/fonts/pixelmix.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pixelmix-bold';
+  src: url('/fonts/pixelmix-bold.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}

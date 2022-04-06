@@ -12,6 +12,9 @@ export default function Home() {
 
       <div className="w-screen h-screen bg-lotus-beige">
         <Nav />
+        <div className="container mx-auto">
+          <h1 className="text-6xl font-pixelmix-bold">Lotus Gang</h1>
+        </div>
       </div>
     </>
   )
