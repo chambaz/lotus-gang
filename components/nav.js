@@ -8,6 +8,25 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 const Nav = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const mobileMenuRef = useRef()
+
+  const navigateTo = (id) => {
+    const target = document.getElementById(id)
+
+    if (!target) {
+      return
+    }
+
+    const bounds = target.getBoundingClientRect()
+
+    setMobileMenuOpen(false)
+    enableBodyScroll(mobileMenuRef.current)
+
+    window.scrollTo({
+      top: document.documentElement.scrollTop + bounds.top - 200,
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <>
       <div className="fixed top-0 z-50 w-screen shadow-lg bg-lotus-beige shadow-lotus-beige">
@@ -21,29 +40,27 @@ const Nav = () => {
           <nav className="hidden ml-auto md:block">
             <ul className="flex items-center text-xl font-normal font-lotus-theboldfont text-lotus-red">
               <li>
-                <Link href="/" passHref>
-                  <a
-                    className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
-                    style={{ transform: 'translateY(4px)' }}>
-                    Home
-                  </a>
-                </Link>
+                <a
+                  onClick={() => navigateTo('about')}
+                  className="block transition border-b-4 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
+                  style={{ transform: 'translateY(4px)' }}>
+                  About
+                </a>
               </li>
               <li className="ml-12">
-                <Link href="#roadmap" passHref>
-                  <a
-                    className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
-                    style={{ transform: 'translateY(4px)' }}>
-                    Roadmap
-                  </a>
-                </Link>
+                <a
+                  onClick={() => navigateTo('roadmap')}
+                  className="block transition border-b-4 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
+                  style={{ transform: 'translateY(4px)' }}>
+                  Roadmap
+                </a>
               </li>
               <li className="ml-12">
                 <a
                   href="https://lotusgang.notion.site/Lotus-Library-cbd560cc5301430b99ac2b5b4df9d226"
                   target="_blank"
                   rel="noreferrer"
-                  className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
+                  className="block transition border-b-4 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
                   style={{ transform: 'translateY(4px)' }}>
                   Library
                 </a>
@@ -137,25 +154,23 @@ const Nav = () => {
         ref={mobileMenuRef}
         className="fixed z-40 w-screen h-full top-20 bg-lotus-beige"
         style={{ display: mobileMenuOpen ? 'block' : 'none' }}>
-        <nav className="flex items-center justify-center w-full h-full -translate-y-20">
+        <nav className="flex flex-col items-center justify-center w-full h-full -translate-y-20">
           <ul className="flex flex-col items-center justify-center font-normal font-lotus-theboldfont text-lotus-red">
             <li className="my-4 text-2xl">
-              <Link href="/" passHref>
-                <a
-                  className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
-                  style={{ transform: 'translateY(4px)' }}>
-                  Home
-                </a>
-              </Link>
+              <a
+                onClick={() => navigateTo('about')}
+                className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
+                style={{ transform: 'translateY(4px)' }}>
+                About
+              </a>
             </li>
             <li className="my-4 text-2xl">
-              <Link href="#roadmap" passHref>
-                <a
-                  className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
-                  style={{ transform: 'translateY(4px)' }}>
-                  Roadmap
-                </a>
-              </Link>
+              <a
+                onClick={() => navigateTo('roadmap')}
+                className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
+                style={{ transform: 'translateY(4px)' }}>
+                Roadmap
+              </a>
             </li>
             <li className="my-4 text-2xl">
               <a
@@ -167,7 +182,9 @@ const Nav = () => {
                 Library
               </a>
             </li>
-            <li className="mt-12 mb-4">
+          </ul>
+          <ul className="flex flex-row items-center justify-center mt-12 font-normal font-lotus-theboldfont text-lotus-red">
+            <li className="mx-2">
               <a
                 href="https://discord.gg/vs8VvHb35k"
                 target="_blank"
@@ -185,7 +202,7 @@ const Nav = () => {
                 </svg>
               </a>
             </li>
-            <li className="my-4">
+            <li className="mx-2">
               <a
                 href="https://twitter.com/LotusGangNFT"
                 target="_blank"
@@ -203,7 +220,7 @@ const Nav = () => {
                 </svg>
               </a>
             </li>
-            <li className="my-4">
+            <li className="mx-2">
               <a
                 href="https://magiceden.io/marketplace/lotus_gang_nft"
                 target="_blank"

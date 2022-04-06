@@ -41,7 +41,7 @@ const Roadmap = () => {
   ]
 
   return (
-    <Section title="Roadmap">
+    <Section title="Roadmap" id="roadmap">
       <div className="max-w-2xl mt-12 mb-6 text-lg leading-relaxed">
         <p>
           Our “roadmap” has continuosly evolved since our humble beginnings. We

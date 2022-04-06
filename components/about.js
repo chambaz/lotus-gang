@@ -3,10 +3,14 @@ import Section from './section'
 
 const About = () => {
   return (
-    <Section title="About" underline="right" className="pb-40 md:pb-0">
+    <Section
+      title="About"
+      id="about"
+      underline="right"
+      className="pb-40 md:pb-0">
       <div className="flex flex-col items-start max-w-2xl mt-12 md:flex-row">
         <Image src="/img/lotus-lady-fpo.jpg" width={212} height={212} />
-        <div className="mt-6 space-y-4 text-lg leading-relaxed  md:mt-0 md:ml-6">
+        <div className="mt-6 space-y-4 text-lg leading-relaxed md:mt-0 md:ml-6">
           <p>
             Lotus Gang is a brand built around art, education and empowerment.
           </p>

@@ -2,7 +2,10 @@ import Section from './section'
 
 const Home = () => {
   return (
-    <Section title="Lotus Gang" className="!items-start md:!items-center pt-32">
+    <Section
+      title="Lotus Gang"
+      id="home"
+      className="!items-start md:!items-center pt-32">
       <p className="max-w-lg mt-12 mb-6 text-lg leading-relaxed">
         The Lotus is a native Indian pond flower. It is described as a burst of
         purity in muddy waters and is a symbol of wisdom.
