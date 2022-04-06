@@ -7,7 +7,9 @@ module.exports = {
     extend: {
       colors: {
         'lotus-beige': '#fff3e1',
-        'lotus-red': '#B8513D',
+        'lotus-red': '#b8513d',
+        'lotus-green': '#97b73e',
+        'lotus-orange': '#db961d',
       },
       fontFamily: {
         'lotus-pixelmix': 'pixelmix',
