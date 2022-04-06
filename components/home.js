@@ -8,7 +8,11 @@ const Home = () => {
         purity in muddy waters and is a symbol of wisdom.
       </p>
 
-      <button className="flex items-center px-6 pt-2 pb-3 text-sm text-white uppercase transition border-2 rounded-full border-lotus-red font-lotus-pixelmix bg-lotus-red hover:bg-transparent hover:text-lotus-red">
+      <a
+        href="https://magiceden.io/marketplace/lotus_gang_nft"
+        target="_blank"
+        rel="noreferrer"
+        className="inline-flex items-center px-6 pt-2 pb-3 text-sm text-white uppercase transition border-2 rounded-full border-lotus-red font-lotus-pixelmix bg-lotus-red hover:bg-transparent hover:text-lotus-red">
         Buy now on
         <div
           className="flex items-center ml-4"
@@ -28,7 +32,7 @@ const Home = () => {
             />
           </svg>
         </div>
-      </button>
+      </a>
     </Section>
   )
 }
