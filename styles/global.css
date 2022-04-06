@@ -4,21 +4,27 @@
 
 @font-face {
   font-family: 'pixelmix-regular';
-  src: url('/fonts/pixelmix.ttf') format('ttf');
+  src: url('/fonts/pixelmix.woff2') format('woff2'),
+    url('/fonts/pixelmix.woff') format('woff'),
+    url('/fonts/pixelmix.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'pixelmix-bold';
-  src: url('/fonts/pixelmix-bold.ttf') format('ttf');
+  src: url('/fonts/pixelmix-bold.woff2') format('woff2'),
+    url('/fonts/pixelmix-bold.woff') format('woff'),
+    url('/fonts/pixelmix-bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'theboldfont';
-  src: url('/fonts/theboldfont.ttf') format('ttf');
+  src: url('/fonts/theboldfont.woff2') format('woff2'),
+    url('/fonts/theboldfont.woff') format('woff'),
+    url('/fonts/theboldfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
