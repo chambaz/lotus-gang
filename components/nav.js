@@ -12,22 +12,31 @@ const Nav = () => {
         </Link>
 
         <nav className="py-8 ml-auto">
-          <ul className="flex items-center text-lg font-bold text-lotus-red">
+          <ul className="flex items-center text-lg font-normal font-lotus-theboldfont text-lotus-red">
             <li>
               <Link href="/" passHref>
-                <a className="cursor-pointer">Home</a>
+                <a
+                  className="block cursor-pointer"
+                  style={{ transform: 'translateY(2px)' }}>
+                  Home
+                </a>
               </Link>
             </li>
             <li className="ml-10">
               <Link href="#roadmap" passHref>
-                <a className="cursor-pointer">Roadmap</a>
+                <a
+                  className="block cursor-pointer"
+                  style={{ transform: 'translateY(2px)' }}>
+                  Roadmap
+                </a>
               </Link>
             </li>
             <li className="ml-10">
               <a
                 href="https://lotusgang.notion.site/Lotus-Library-cbd560cc5301430b99ac2b5b4df9d226"
                 target="_blank"
-                className="cursor-pointer">
+                className="block cursor-pointer"
+                style={{ transform: 'translateY(2px)' }}>
                 Library
               </a>
             </li>

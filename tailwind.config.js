@@ -10,8 +10,9 @@ module.exports = {
         'lotus-red': '#B8513D',
       },
       fontFamily: {
-        pixelmix: 'pixelmix-regular',
-        'pixelmix-bold': 'pixelmix-bold',
+        'lotus-pixelmix': 'pixelmix-regular',
+        'lotus-pixelmix-bold': 'pixelmix-bold',
+        'lotus-theboldfont': 'theboldfont',
       },
     },
   },

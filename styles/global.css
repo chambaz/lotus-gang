@@ -15,3 +15,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'theboldfont';
+  src: url('/fonts/theboldfont.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
