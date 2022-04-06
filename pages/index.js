@@ -17,12 +17,14 @@ export default function Home() {
         <Section title="Lotus Gang">
           <p className="max-w-lg mt-12 mb-6 text-lg leading-relaxed">
             The Lotus is a native Indian pond flower. It is described as a burst
-            of purity in muddy waters and is a symbol of wisdom.{' '}
+            of purity in muddy waters and is a symbol of wisdom.
           </p>
 
-          <button className="flex items-center px-6 py-2 text-white uppercase rounded-full bg-lotus-red">
-            Buy now on{' '}
-            <div className="flex items-center ml-4">
+          <button className="flex items-center px-6 pt-2 pb-3 text-sm text-white uppercase transition rounded-full font-lotus-pixelmix bg-lotus-red">
+            Buy now on
+            <div
+              className="flex items-center ml-4"
+              style={{ transform: 'translateY(1px)' }}>
               <Image src="/img/magic-eden-white.svg" width={23} height={23} />
             </div>
           </button>
@@ -56,9 +58,10 @@ export default function Home() {
           </div>
         </Section>
         <Section title="Roadmap">
-          <p className="max-w-lg my-8 text-lg leading-relaxed">
-            The Lotus is a native Indian pond flower. It is described as a burst
-            of purity in muddy waters and is a symbol of wisdom.{' '}
+          <p className="max-w-lg mt-12 mb-6 text-lg leading-relaxed">
+            Our “roadmap” has continuosly evolved since our humble beginnings.
+            We continue to create value by expanding our scope and deep dive
+            into our strengths.
           </p>
         </Section>
         <div className="fixed bottom-0 right-0 z-10 flex">
