@@ -4,14 +4,14 @@ import Link from 'next/link'
 const Nav = () => {
   return (
     <div className="fixed top-0 z-10 w-screen shadow-lg bg-lotus-beige shadow-lotus-beige">
-      <div className="container flex items-center px-4 mx-auto">
+      <div className="container flex items-center px-8 py-4 mx-auto">
         <Link href="/" passHref>
           <a className="cursor-pointer">
             <Image src="/img/lotus.svg" width={50} height={50} />
           </a>
         </Link>
 
-        <nav className="py-8 ml-auto">
+        <nav className="hidden ml-auto lg:block">
           <ul className="flex items-center text-xl font-normal font-lotus-theboldfont text-lotus-red">
             <li>
               <Link href="/" passHref>

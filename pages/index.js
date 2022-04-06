@@ -14,7 +14,7 @@ const HomePage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="w-screen h-full overflow-x-hidden bg-lotus-beige">
+      <div className="w-screen min-h-full overflow-x-hidden bg-lotus-beige">
         <Nav />
         <Home />
         <About />
