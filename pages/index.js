@@ -27,7 +27,7 @@ export default function Home() {
             </div>
           </button>
         </Section>
-        <Section title="About">
+        <Section title="About" underline="right">
           <p className="max-w-lg my-8 text-lg leading-relaxed">
             The Lotus is a native Indian pond flower. It is described as a burst
             of purity in muddy waters and is a symbol of wisdom.{' '}
