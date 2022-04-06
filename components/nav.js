@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { HiMenuAlt1 } from 'react-icons/hi'
 
 const Nav = () => {
   return (
@@ -101,6 +102,11 @@ const Nav = () => {
             </li>
           </ul>
         </nav>
+
+        <HiMenuAlt1
+          className="ml-auto text-4xl cursor-pointer md:hidden text-lotus-red"
+          style={{ transform: 'translateY(2px)' }}
+        />
       </div>
     </div>
   )
