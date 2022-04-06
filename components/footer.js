@@ -95,7 +95,7 @@ const Footer = () => {
         </div>
       </footer>
       <div
-        className="fixed bottom-0 right-0 z-10 flex w-56 transition duration-500 pointer-events-none lg:w-96 xl:w-auto"
+        className="fixed bottom-0 right-0 z-10 flex transition duration-500 pointer-events-none w-52 lg:w-96 xl:w-auto"
         style={{
           transform: showPinnedCharacter ? 'translateY(0)' : 'translateY(50vh)',
         }}>
