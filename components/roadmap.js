@@ -49,11 +49,11 @@ const Roadmap = () => {
           strengths.
         </p>
         <ul className="my-8">
-          {items.map((item) => {
+          {items.map((item, key) => {
             const classes =
               item.status === 'done' ? 'bg-lotus-green' : 'bg-lotus-orange'
             return (
-              <li className="flex items-start my-6">
+              <li className="flex items-start my-6" key={key}>
                 <span
                   className={`w-20 px-4 py-2 mr-3 text-xs text-center text-white uppercase rounded-full font-lotus-pixelmix ${classes}`}>
                   {item.status}
