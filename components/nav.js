@@ -35,6 +35,7 @@ const Nav = () => {
               <a
                 href="https://lotusgang.notion.site/Lotus-Library-cbd560cc5301430b99ac2b5b4df9d226"
                 target="_blank"
+                rel="noreferrer"
                 className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
                 style={{ transform: 'translateY(4px)' }}>
                 Library
@@ -44,6 +45,7 @@ const Nav = () => {
               <a
                 href="https://discord.gg/vs8VvHb35k"
                 target="_blank"
+                rel="noreferrer"
                 className="flex items-center transition cursor-pointer text-lotus-red hover:text-lotus-red-light">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -61,6 +63,7 @@ const Nav = () => {
               <a
                 href="https://twitter.com/LotusGangNFT"
                 target="_blank"
+                rel="noreferrer"
                 className="flex items-center transition cursor-pointer text-lotus-red hover:text-lotus-red-light">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -78,6 +81,7 @@ const Nav = () => {
               <a
                 href="https://magiceden.io/marketplace/lotus_gang_nft"
                 target="_blank"
+                rel="noreferrer"
                 className="flex items-center transition cursor-pointer text-lotus-red hover:text-lotus-red-light">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

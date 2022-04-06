@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import Nav from '../components/nav'
 import Section from '../components/section'
 
@@ -140,17 +141,20 @@ export default function Home() {
         <footer className="w-screen py-6 bg-lotus-red">
           <div className="container px-4 mx-auto text-xs text-white font-lotus-pixelmix">
             <div className="flex items-center">
-              <a href="/" className="flex items-center">
-                <div className="mr-3">
-                  <Image src="/img/lotus-white.svg" width={20} height={20} />
-                </div>
-                Lotus Gang
-              </a>
+              <Link href="/" passHref>
+                <a className="flex items-center">
+                  <div className="mr-3">
+                    <Image src="/img/lotus-white.svg" width={20} height={20} />
+                  </div>
+                  Lotus Gang
+                </a>
+              </Link>
               <ul className="flex items-center ml-10">
                 <li>
                   <a
                     href="https://discord.gg/vs8VvHb35k"
                     target="_blank"
+                    rel="noreferrer"
                     className="flex items-center text-white cursor-pointer">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -168,6 +172,7 @@ export default function Home() {
                   <a
                     href="https://twitter.com/LotusGangNFT"
                     target="_blank"
+                    rel="noreferrer"
                     className="flex items-center text-white cursor-pointer">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -185,6 +190,7 @@ export default function Home() {
                   <a
                     href="https://magiceden.io/marketplace/lotus_gang_nft"
                     target="_blank"
+                    rel="noreferrer"
                     className="flex items-center text-white cursor-pointer">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
