@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'lotus-beige': '#fff3e1',
         'lotus-red': '#b8513d',
+        'lotus-red-light': '#D37F75',
         'lotus-green': '#97b73e',
         'lotus-orange': '#db961d',
       },
