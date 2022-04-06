@@ -6,8 +6,10 @@ import { throttle } from 'lodash'
 const Footer = () => {
   const [showCharacter, setShowCharacter] = useState(false)
   const [showPinnedCharacter, setShowPinnedCharacter] = useState(true)
+  const [windowHeight, setWindowHeight] = useState(0)
 
   useEffect(() => {
+    setWindowHeight(window.outerHeight)
     setTimeout(() => {
       setShowCharacter(true)
     }, 300)
@@ -110,7 +112,7 @@ const Footer = () => {
         <img
           src="/img/character-fpo.png"
           className="object-contain w-full"
-          style={{ maxHeight: window.outerHeight - 200 }}
+          style={{ maxHeight: windowHeight - 200 }}
         />
       </div>
     </>
