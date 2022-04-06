@@ -17,7 +17,7 @@ const Section = ({ children, title, id, className, underline = 'left' }) => {
       style={{ opacity: showContent ? 1 : 0 }}>
       <div className="px-8 2xl:container 2xl:mx-auto">
         <h1
-          className={`${underlinePos} inline uppercase text-6xl md:text-7xl font-lotus-pixelmix-bold relative after:content-[''] after:block after:absolute after:w-screen after:h-2 after:mt-4 after:bg-lotus-red`}>
+          className={`${underlinePos} inline z-20 uppercase text-6xl md:text-7xl font-lotus-pixelmix-bold relative after:content-[''] after:block after:absolute after:w-screen after:h-2 after:mt-4 after:bg-lotus-red`}>
           {title}
         </h1>
         {children}

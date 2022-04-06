@@ -6,7 +6,7 @@ const Home = () => {
       title="Lotus Gang"
       id="home"
       className="!items-start md:!items-center md:-translate-y-24 pt-32">
-      <p className="relative max-w-lg mt-12 mb-6 text-lg leading-relaxed">
+      <p className="relative z-10 max-w-lg mt-12 mb-6 text-lg leading-relaxed">
         The Lotus is a native Indian pond flower. It is described as a burst of
         purity in muddy waters and is a symbol of wisdom.
         <img
