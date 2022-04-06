@@ -7,12 +7,12 @@ const Nav = () => {
       <div className="container flex items-center mx-auto">
         <Link href="/" passHref>
           <a className="cursor-pointer">
-            <Image src="/img/lotus.svg" width={40} height={40} />
+            <Image src="/img/lotus.svg" width={50} height={50} />
           </a>
         </Link>
 
         <nav className="py-8 ml-auto">
-          <ul className="flex items-center text-lg font-normal font-lotus-theboldfont text-lotus-red">
+          <ul className="flex items-center text-xl font-normal font-lotus-theboldfont text-lotus-red">
             <li>
               <Link href="/" passHref>
                 <a
@@ -22,7 +22,7 @@ const Nav = () => {
                 </a>
               </Link>
             </li>
-            <li className="ml-10">
+            <li className="ml-12">
               <Link href="#roadmap" passHref>
                 <a
                   className="block cursor-pointer"
@@ -31,7 +31,7 @@ const Nav = () => {
                 </a>
               </Link>
             </li>
-            <li className="ml-10">
+            <li className="ml-12">
               <a
                 href="https://lotusgang.notion.site/Lotus-Library-cbd560cc5301430b99ac2b5b4df9d226"
                 target="_blank"
