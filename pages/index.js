@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="w-screen h-full bg-lotus-beige">
+      <div className="w-screen h-full overflow-x-hidden bg-lotus-beige">
         <Nav />
         <Section title="Lotus Gang">
           <p className="max-w-lg mt-12 mb-6 text-lg leading-relaxed">
