@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <>
-      <footer className="w-screen py-6 bg-lotus-red">
+      <footer className="w-screen py-6 mt-16 bg-lotus-red">
         <div className="container px-4 mx-auto text-xs text-white font-lotus-pixelmix">
           <div className="flex items-center">
             <Link href="/" passHref>
