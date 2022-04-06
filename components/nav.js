@@ -18,12 +18,13 @@ const Nav = () => {
     }
 
     const bounds = target.getBoundingClientRect()
+    const offset = window.outerWidth < 768 ? 260 : 200
 
     setMobileMenuOpen(false)
     enableBodyScroll(mobileMenuRef.current)
 
     window.scrollTo({
-      top: document.documentElement.scrollTop + bounds.top - 200,
+      top: document.documentElement.scrollTop + bounds.top - offset,
       behavior: 'smooth',
     })
   }
