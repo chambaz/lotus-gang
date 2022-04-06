@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <>
       <footer className="w-screen py-6 mt-16 bg-lotus-red">
-        <div className="container px-4 mx-auto text-xs text-white font-lotus-pixelmix">
+        <div className="container px-8 mx-auto text-xs text-white font-lotus-pixelmix">
           <div className="flex items-center">
             <Link href="/" passHref>
               <a className="flex items-center">
@@ -31,7 +31,7 @@ const Footer = () => {
                 Lotus Gang
               </a>
             </Link>
-            <ul className="flex items-center ml-10">
+            <ul className="flex items-center ml-auto md:ml-10">
               <li>
                 <a
                   href="https://discord.gg/vs8VvHb35k"
