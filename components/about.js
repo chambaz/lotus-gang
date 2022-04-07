@@ -7,9 +7,9 @@ const About = () => {
       id="about"
       underline="right"
       className="pb-40 md:pb-0">
-      <div className="flex flex-col items-start justify-start mt-12 md:max-w-4xl md:flex-row">
+      <div className="flex flex-col items-start justify-start mt-12 md:max-w-5xl md:flex-row">
         <div className="flex">
-          <img src="/img/gang.gif" style={{ maxWidth: 215 }} />
+          <img src="/img/gang.gif" style={{ maxWidth: 266 }} />
         </div>
         <div className="w-full mt-6 space-y-4 text-lg leading-relaxed md:mt-0 md:ml-6">
           <p>
