@@ -64,6 +64,16 @@ const HomePage = () => {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b9523e" />
         <meta name="msapplication-TileColor" content="#ff0000" />
         <meta name="theme-color" content="#ffffff" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Sanchez&family=Space+Mono&family=Zilla+Slab&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <div className="w-screen min-h-full overflow-x-hidden bg-lotus-beige">

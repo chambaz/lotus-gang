@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: 'Zilla Slab, serif',
+      },
       colors: {
         'lotus-beige': '#fff3e1',
         'lotus-red': '#b8513d',

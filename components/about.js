@@ -12,10 +12,10 @@ const About = () => {
           <img
             src="/img/gang.gif"
             className="rounded-3xl"
-            style={{ maxWidth: 266 }}
+            style={{ maxWidth: 245 }}
           />
         </div>
-        <div className="w-full mt-6 space-y-4 text-lg leading-relaxed md:mt-0 md:ml-6">
+        <div className="w-full mt-6 space-y-4 leading-relaxed md:mt-0 md:ml-6">
           <p>
             Lotus Gang is a brand built around art, education and empowerment.
           </p>

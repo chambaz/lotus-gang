@@ -19,12 +19,12 @@ const Section = ({ children, title, id, className, underline = 'left' }) => {
       <div className="px-8 2xl:container 2xl:mx-auto">
         <Parallax offset={75}>
           <h1
-            className={`${underlinePos} inline-block z-20 uppercase text-6xl md:text-7xl font-lotus-pixelmix-bold relative after:content-[''] after:block after:absolute after:w-screen after:h-2 after:mt-4 after:bg-lotus-red`}>
+            className={`${underlinePos} text-black inline-block z-20 uppercase text-6xl md:text-7xl font-lotus-pixelmix-bold relative after:content-[''] after:block after:absolute after:w-screen after:h-2 after:mt-4 after:bg-lotus-red`}>
             {title}
           </h1>
         </Parallax>
         <Parallax offset={50}>
-          <div className="md:-translate-y-4">{children}</div>
+          <div className="text-gray-700 md:-translate-y-4">{children}</div>
         </Parallax>
       </div>
     </div>

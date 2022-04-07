@@ -25,3 +25,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+body {
+  color: #303030;
+  /* font-family: 'Sanchez', serif; */
+  font-family: 'Space Mono', monospace;
+  /* font-family: 'Zilla Slab', serif; */
+}
