@@ -10,7 +10,7 @@ const Home = () => {
       <Parallax offset={200} clampInitial>
         <img
           src="/img/lotus-lady.jpg"
-          className="absolute hidden lg:block"
+          className="absolute hidden lg:block rounded-3xl"
           style={{ width: 300, top: -175, right: -400 }}
         />
       </Parallax>
