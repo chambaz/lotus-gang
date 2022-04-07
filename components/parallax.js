@@ -39,7 +39,6 @@ const Parallax = ({ children, offset = 50, clampInitial, clampFinal }) => {
     }
 
     onResize()
-    window.addEventListener('resize', debounce(onResize, 100))
 
     return () => window.removeEventListener('resize', onResize)
   }, [])
