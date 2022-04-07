@@ -178,7 +178,7 @@ const Nav = () => {
 
       <div
         ref={mobileMenuRef}
-        className="fixed z-40 w-screen h-full top-20 bg-lotus-beige"
+        className="fixed z-40 w-screen h-full top-24 bg-lotus-beige"
         style={{ display: mobileMenuOpen ? 'block' : 'none' }}>
         <nav className="flex flex-col items-center justify-center w-full h-full -translate-y-20">
           <ul className="flex flex-col items-center justify-center font-normal font-lotus-theboldfont text-lotus-red">
