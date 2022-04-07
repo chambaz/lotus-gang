@@ -8,7 +8,7 @@ const Section = ({ children, title, id, className, underline = 'left' }) => {
   useEffect(() => {
     setTimeout(() => {
       setShowContent(true)
-    }, 750)
+    }, 1200)
   }, [])
 
   return (
