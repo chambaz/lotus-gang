@@ -41,7 +41,7 @@ const HomePage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://lotus-gang.vercel.app/img/share-twitter.jpg"
+          content="https://www.lotusgang.com/img/share-twitter.jpg"
         />
         <link
           rel="apple-touch-icon"
