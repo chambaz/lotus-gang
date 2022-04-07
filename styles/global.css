@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'pixelmix';
+  src: url('/fonts/pixelmix.woff') format('woff'),
+    url('/fonts/pixelmix.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pixelmix-bold';
+  src: url('/fonts/pixelmix-bold.woff') format('woff'),
+    url('/fonts/pixelmix-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'theboldfont';
+  src: url('/fonts/theboldfont.woff') format('woff'),
+    url('/fonts/theboldfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #303030;
+  font-family: 'Space Mono', monospace;
+  overflow-x: hidden;
+}
+
+@supports (-ms-ime-align: auto) {
+  .pixelLady {
+    position: absolute !important;
+    transform: translateY(-10rem) !important;
+  }
+}
