@@ -23,7 +23,9 @@ const Section = ({ children, title, id, className, underline = 'left' }) => {
             {title}
           </h1>
         </Parallax>
-        <Parallax offset={50}>{children}</Parallax>
+        <Parallax offset={50}>
+          <div className="-translate-y-4">{children}</div>
+        </Parallax>
       </div>
     </div>
   )
