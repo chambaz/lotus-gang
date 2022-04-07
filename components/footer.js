@@ -117,7 +117,7 @@ const Footer = () => {
         <img
           src="/img/lady-illustration.png"
           className="object-contain w-full md:scale-125"
-          style={{ maxHeight: windowHeight - 100 }}
+          style={{ maxHeight: windowHeight - 120 }}
         />
       </div>
     </>
