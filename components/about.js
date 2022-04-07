@@ -22,14 +22,14 @@ const About = () => {
             <strong>empowerment</strong>.
           </p>
           <p>
-            Our GEN 0 collection contains 2,000 lads and 2,000 ladies that give
+            Our GEN 0 collection contains 2,000 Lads and 2,000 Ladies that give
             you access to our ongoing projects and closed community.
           </p>
 
           <p>
             By owning a Lad or Lady, you will receive exclusive insights from
             our research team and opportunities for exposure to other exciting
-            communities in across Blockchains.
+            communities across Blockchains.
           </p>
 
           <p>
