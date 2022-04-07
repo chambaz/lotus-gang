@@ -10,7 +10,33 @@ const HomePage = () => {
     <>
       <Head>
         <title>Lotus Gang</title>
-        <meta name="description" content="Lotus Gang" />
+        <meta
+          name="description"
+          content="2,000 Lotus Lads and 2,000 Lotus Ladies on the Solana Blockchain"
+        />
+        <meta property="og:title" content="Lotus Gang" />
+        <meta
+          name="og:description"
+          content="2,000 Lotus Lads and 2,000 Lotus Ladies on the Solana Blockchain"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.lotusgang.com/" />
+        <meta
+          property="og:image"
+          content="https://www.lotusgang.com/img/share-og.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@nytimes" />
+        <meta name="twitter:creator" content="@SarahMaslinNir" />
+        <meta name="twitter:title" content="Lotus Gang" />
+        <meta
+          name="twitter:description"
+          content="2,000 Lotus Lads and 2,000 Lotus Ladies on the Solana Blockchain"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.lotusgang.com/img/share-twitter.jpg"
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
