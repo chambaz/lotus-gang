@@ -11,6 +11,7 @@ const Parallax = ({ children, offset = 50, clampInitial, clampFinal }) => {
   const prefersReducedMotion = useReducedMotion()
   const [elementTop, setElementTop] = useState(0)
   const [clientHeight, setClientHeight] = useState(0)
+  const [clientWidth, setClientWidth] = useState(0)
   const ref = useRef(null)
 
   const { scrollY } = useViewportScroll()
@@ -23,7 +24,7 @@ const Parallax = ({ children, offset = 50, clampInitial, clampFinal }) => {
     [initial, final],
     [clampInitial ? 0 : offset, clampFinal ? 0 : -offset]
   )
-  let y = useSpring(yRange, { stiffness: 400, damping: 90 })
+  const y = useSpring(yRange, { stiffness: 400, damping: 90 })
 
   useEffect(() => {
     const element = ref.current
@@ -33,6 +34,7 @@ const Parallax = ({ children, offset = 50, clampInitial, clampFinal }) => {
           window.pageYOffset
       )
       setClientHeight(window.innerHeight)
+      setClientWidth(window.innerWidth)
     }
 
     onResize()
@@ -42,8 +44,8 @@ const Parallax = ({ children, offset = 50, clampInitial, clampFinal }) => {
   }, [])
 
   // Don't parallax if the user has "reduced motion" enabled
-  if (prefersReducedMotion) {
-    return <>{children}</>
+  if (prefersReducedMotion || clientWidth < 768) {
+    return <div ref={ref}>{children}</div>
   }
 
   return (
