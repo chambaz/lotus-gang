@@ -7,7 +7,7 @@ const About = () => {
       id="about"
       underline="right"
       className="pb-40 md:pb-0">
-      <div className="flex flex-col items-start justify-start mt-12 md:max-w-5xl md:flex-row">
+      <div className="flex flex-col items-start justify-start mt-8 md:mt-12 md:max-w-5xl md:flex-row">
         <div className="flex">
           <img
             src="/img/gang.gif"
