@@ -4,7 +4,7 @@ const Roadmap = () => {
   const items = [
     {
       status: 'done',
-      text: 'Launch the first project with equal male and females',
+      text: 'Launch the first project with equal males and females',
     },
     {
       status: 'done',
