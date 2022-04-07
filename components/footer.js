@@ -9,13 +9,6 @@ const Footer = () => {
   const [windowHeight, setWindowHeight] = useState(0)
 
   useEffect(() => {
-    setWindowHeight(window.outerHeight)
-    setTimeout(() => {
-      setShowCharacter(true)
-    }, 300)
-  }, [])
-
-  useEffect(() => {
     document.addEventListener(
       'scroll',
       throttle(() => {
@@ -26,6 +19,18 @@ const Footer = () => {
         }
       }, 100)
     )
+
+    window.addEventListener(
+      'resize',
+      throttle(() => {
+        setWindowHeight(window.innerHeight)
+      }, 100)
+    )
+
+    setWindowHeight(window.innerHeight)
+    setTimeout(() => {
+      setShowCharacter(true)
+    }, 300)
   }, [])
   return (
     <>
