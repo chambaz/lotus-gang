@@ -127,7 +127,7 @@ const Footer = () => {
         </div>
       </footer>
       <div
-        className="fixed bottom-0 z-40 flex items-end h-screen transition duration-1000 opacity-0 pointer-events-none md:right-0 -right-6 w-80 md:w-1/2 pinnedLady"
+        className="fixed bottom-0 z-40 flex items-end h-screen transition duration-1000 opacity-0 pointer-events-none md:right-0 -right-6 w-80 md:w-1/2"
         style={{
           transform: showPinnedCharacter ? 'translateY(0)' : 'translateY(50vh)',
           opacity: showCharacter ? 1 : 0,

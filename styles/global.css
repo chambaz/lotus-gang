@@ -33,7 +33,7 @@ body {
 }
 
 @supports (-ms-ime-align: auto) {
-  .pinnedLady {
+  .pixelLady {
     position: absolute !important;
     transform: translateY(-10rem) !important;
   }

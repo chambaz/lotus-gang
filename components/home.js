@@ -28,7 +28,7 @@ const Home = () => {
       <Parallax offset={200}>
         <img
           src="/img/lotus-lady.jpg"
-          className="absolute transition duration-1000 translate-y-10 -translate-x-28 lg:fixed rounded-3xl md:-translate-x-0 md:-translate-y-60 lg:-translate-y-80 xl:-translate-y-96"
+          className="absolute transition duration-1000 translate-y-10 -translate-x-28 lg:fixed rounded-3xl md:-translate-x-0 md:-translate-y-60 lg:-translate-y-80 xl:-translate-y-96 pixelLady"
           style={{
             width: clientWidth <= 768 ? '25vw' : '23vw',
             bottom: '8vh',
