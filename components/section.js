@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Parallax from './parallax'
 
 const Section = ({ children, title, id, className, underline = 'left' }) => {
   const [showContent, setShowContent] = useState(false)
@@ -16,11 +17,13 @@ const Section = ({ children, title, id, className, underline = 'left' }) => {
       id={id}
       style={{ opacity: showContent ? 1 : 0 }}>
       <div className="px-8 2xl:container 2xl:mx-auto">
-        <h1
-          className={`${underlinePos} inline z-20 uppercase text-6xl md:text-7xl font-lotus-pixelmix-bold relative after:content-[''] after:block after:absolute after:w-screen after:h-2 after:mt-4 after:bg-lotus-red`}>
-          {title}
-        </h1>
-        {children}
+        <Parallax offset={75}>
+          <h1
+            className={`${underlinePos} inline z-20 uppercase text-6xl md:text-7xl font-lotus-pixelmix-bold relative after:content-[''] after:block after:absolute after:w-screen after:h-2 after:mt-4 after:bg-lotus-red`}>
+            {title}
+          </h1>
+        </Parallax>
+        <Parallax offset={50}>{children}</Parallax>
       </div>
     </div>
   )

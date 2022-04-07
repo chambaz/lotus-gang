@@ -1,6 +1,22 @@
+import { useState, useEffect } from 'react'
 import Section from './section'
+import Parallax from './parallax'
 
 const Home = () => {
+  const [parallaxImage, setParallaxImage] = useState('')
+
+  useEffect(() => {
+    setParallaxImage(
+      <Parallax offset={200} clampInitial>
+        <img
+          src="/img/lotus-lady.jpg"
+          className="absolute hidden lg:block"
+          style={{ width: 300, top: -175, right: -400 }}
+        />
+      </Parallax>
+    )
+  }, [])
+
   return (
     <Section
       title="Lotus Gang"
@@ -9,11 +25,7 @@ const Home = () => {
       <p className="relative z-10 max-w-lg mt-12 mb-6 text-lg leading-relaxed">
         The Lotus is a native Indian pond flower. It is described as a burst of
         purity in muddy waters and is a symbol of wisdom.
-        <img
-          src="/img/lotus-lady.jpg"
-          className="absolute hidden lg:block"
-          style={{ width: 300, top: -175, right: -300 }}
-        />
+        {parallaxImage}
       </p>
 
       <a
