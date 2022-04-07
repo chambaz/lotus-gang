@@ -32,7 +32,7 @@ const Nav = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowNav(true)
-    }, 1500)
+    }, 2000)
   }, [])
 
   return (

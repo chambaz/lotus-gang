@@ -4,6 +4,7 @@ import Section from './section'
 import Parallax from './parallax'
 
 const Home = () => {
+  const [showImage, setShowImage] = useState(false)
   const [parallaxImage, setParallaxImage] = useState('')
   const [clientWidth, setClientWidth] = useState(0)
 
@@ -15,6 +16,11 @@ const Home = () => {
     onResize()
     window.addEventListener('resize', debounce(onResize, 100))
 
+    setTimeout(() => {
+      setShowImage(true)
+      console.log('here')
+    }, 1500)
+
     return () => window.removeEventListener('resize', onResize)
   }, [])
 
@@ -23,16 +29,17 @@ const Home = () => {
       <Parallax offset={200}>
         <img
           src="/img/lotus-lady.jpg"
-          className="absolute -translate-x-20 -translate-y-12 lg:fixed rounded-3xl md:-translate-x-0 md:-translate-y-60 lg:-translate-y-80 xl:-translate-y-96"
+          className="absolute transition duration-1000 -translate-x-20 -translate-y-12 lg:fixed rounded-3xl md:-translate-x-0 md:-translate-y-60 lg:-translate-y-80 xl:-translate-y-96"
           style={{
             width: clientWidth <= 768 ? '40vw' : '23vw',
             bottom: '8vh',
             right: '27vw',
+            opacity: showImage ? 1 : 0,
           }}
         />
       </Parallax>
     )
-  }, [clientWidth])
+  }, [clientWidth, showImage])
 
   return (
     <>
