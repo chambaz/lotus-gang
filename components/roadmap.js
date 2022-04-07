@@ -12,10 +12,6 @@ const Roadmap = () => {
     },
     {
       status: 'done',
-      text: 'Launch the first project with equal males and females',
-    },
-    {
-      status: 'done',
       text: 'Onboard a charity to the blockchain to demonstrate the capabilities and raise awareness',
     },
     {
