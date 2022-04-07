@@ -12,12 +12,12 @@ const HomePage = () => {
         <title>Lotus Gang</title>
         <meta
           name="description"
-          content="2,000 Lotus Lads and 2,000 Lotus Ladies on the Solana Blockchain"
+          content="Lotus Gang is a brand built around art, education and empowerment."
         />
         <meta property="og:title" content="Lotus Gang" />
         <meta
           name="og:description"
-          content="2,000 Lotus Lads and 2,000 Lotus Ladies on the Solana Blockchain"
+          content="Lotus Gang is a brand built around art, education and empowerment."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.lotusgang.com/" />
@@ -31,7 +31,7 @@ const HomePage = () => {
         <meta name="twitter:title" content="Lotus Gang" />
         <meta
           name="twitter:description"
-          content="2,000 Lotus Lads and 2,000 Lotus Ladies on the Solana Blockchain"
+          content="Lotus Gang is a brand built around art, education and empowerment."
         />
         <meta
           name="twitter:image"
