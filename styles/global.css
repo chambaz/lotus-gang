@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'pixelmix-regular';
+  font-family: 'pixelmix';
   src: url('/fonts/pixelmix.woff') format('woff'),
     url('/fonts/pixelmix.ttf') format('truetype');
   font-weight: normal;
