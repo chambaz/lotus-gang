@@ -18,7 +18,7 @@ const Nav = () => {
     }
 
     const bounds = target.getBoundingClientRect()
-    const offset = window.outerWidth < 768 ? 260 : 200
+    const offset = window.outerWidth < 768 ? 260 : 180
 
     setMobileMenuOpen(false)
     enableBodyScroll(mobileMenuRef.current)

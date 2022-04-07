@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import { debounce } from 'lodash'
 import {
   motion,
   useViewportScroll,
@@ -38,7 +39,7 @@ const Parallax = ({ children, offset = 50, clampInitial, clampFinal }) => {
     }
 
     onResize()
-    window.addEventListener('resize', onResize)
+    window.addEventListener('resize', debounce(onResize, 100))
 
     return () => window.removeEventListener('resize', onResize)
   }, [])
