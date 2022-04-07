@@ -9,12 +9,15 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Lotus Gang</title>
+        <title>Lotus Gang - Art, education, empowerment</title>
         <meta
           name="description"
           content="Lotus Gang is a brand built around art, education and empowerment."
         />
-        <meta property="og:title" content="Lotus Gang" />
+        <meta
+          property="og:title"
+          content="Lotus Gang - Art, education, empowerment"
+        />
         <meta
           name="og:description"
           content="Lotus Gang is a brand built around art, education and empowerment."
@@ -28,7 +31,10 @@ const HomePage = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@nytimes" />
         <meta name="twitter:creator" content="@SarahMaslinNir" />
-        <meta name="twitter:title" content="Lotus Gang" />
+        <meta
+          name="twitter:title"
+          content="Lotus Gang - Art, education, empowerment"
+        />
         <meta
           name="twitter:description"
           content="Lotus Gang is a brand built around art, education and empowerment."
