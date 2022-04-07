@@ -12,27 +12,28 @@ const About = () => {
           <img
             src="/img/gang.gif"
             className="rounded-3xl"
-            style={{ maxWidth: 245 }}
+            style={{ maxWidth: 258 }}
           />
         </div>
         <div className="w-full mt-6 space-y-4 leading-relaxed md:mt-0 md:ml-6">
           <p>
-            Lotus Gang is a brand built around art, education and empowerment.
+            <strong>Lotus Gang</strong> is a brand built around{' '}
+            <strong>art</strong>, <strong>education</strong> and{' '}
+            <strong>empowerment</strong>.
           </p>
           <p>
             Our GEN 0 collection contains 2,000 lads and 2,000 ladies that give
-            you vaccess to our ongoing projects and closed community.
+            you access to our ongoing projects and closed community.
           </p>
 
           <p>
-            Receive exclusive insights from our research team and opportunities
-            for exposure to other exciting communities in our across
-            Blockchains.
+            By owning a Lad or Lady, you will receive exclusive insights from
+            our research team and opportunities for exposure to other exciting
+            communities in across Blockchains.
           </p>
 
-          <p>Lotus Gang launched on Solana during October 2021.</p>
-
           <p>
+            <strong>Lotus Gang</strong> launched on Solana during October 2021.
             We donated $52,000 USD to United Sikhs to assist with the
             Farmer&apos;s Protest.
           </p>

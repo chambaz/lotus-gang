@@ -8,11 +8,11 @@ const Roadmap = () => {
     },
     {
       status: 'done',
-      text: 'Donate 10% of Mint to Charity',
+      text: 'Donate 10% of mint to charity',
     },
     {
       status: 'done',
-      text: 'Launch the first project with equal male and females',
+      text: 'Launch the first project with equal males and females',
     },
     {
       status: 'done',
@@ -24,7 +24,7 @@ const Roadmap = () => {
     },
     {
       status: 'wip',
-      text: 'Explore metaverse integration in the second and third dimension',
+      text: 'Explore metaverse integration in the 2nd and 3rd dimension',
     },
     {
       status: 'wip',
@@ -44,23 +44,21 @@ const Roadmap = () => {
     <Section title="Roadmap" id="roadmap">
       <div className="max-w-4xl mt-12 mb-6 leading-relaxed">
         <p>
-          Our “roadmap” has continuosly evolved since our humble beginnings. We
-          continue to create value by expanding our scope and deep dive into our
-          strengths.
+          Our “roadmap” has continuously evolved since our humble beginnings. We
+          continue to create value by expanding our scope and deep-diving into
+          our strengths.
         </p>
         <ul className="my-8">
           {items.map((item, key) => {
             const classes =
               item.status === 'done' ? 'bg-lotus-green' : 'bg-lotus-orange'
             return (
-              <li
-                className="flex items-start my-6 italic md:items-center"
-                key={key}>
+              <li className="flex items-start my-6 md:items-center" key={key}>
                 <span
                   className={`w-20 px-4 py-2 mr-3 text-xs text-center text-white uppercase rounded-full font-lotus-pixelmix ${classes}`}>
                   {item.status}
                 </span>
-                <p className="w-full ml-auto">{item.text}</p>
+                <p className="w-full ml-auto italic">{item.text}</p>
               </li>
             )
           })}
