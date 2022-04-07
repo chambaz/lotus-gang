@@ -18,7 +18,7 @@ const Nav = () => {
     }
 
     const bounds = target.getBoundingClientRect()
-    const offset = window.outerWidth < 768 ? 260 : 180
+    const offset = window.outerWidth < 768 ? 140 : 180
 
     setMobileMenuOpen(false)
     enableBodyScroll(mobileMenuRef.current)
@@ -41,11 +41,9 @@ const Nav = () => {
         className="fixed top-0 z-50 w-screen transition duration-1000 shadow-lg bg-lotus-beige shadow-lotus-beige"
         style={{ transform: showNav ? 'translateY(0)' : 'translateY(-100px)' }}>
         <div className="flex items-center px-8 py-4 2xl:container 2xl:mx-auto">
-          <Link href="/" passHref>
-            <a className="cursor-pointer">
-              <Image src="/img/lotus.svg" width={50} height={50} />
-            </a>
-          </Link>
+          <a onClick={() => navigateTo('home')} className="cursor-pointer">
+            <Image src="/img/lotus.svg" width={50} height={50} />
+          </a>
 
           <nav className="hidden ml-auto md:block">
             <ul className="flex items-center text-xl font-normal font-lotus-theboldfont text-lotus-red">

@@ -25,7 +25,7 @@ const Home = () => {
           src="/img/lotus-lady.jpg"
           className="absolute -translate-x-20 -translate-y-12 lg:fixed rounded-3xl md:-translate-x-0 md:-translate-y-60 lg:-translate-y-80 xl:-translate-y-96"
           style={{
-            width: clientWidth <= 768 ? '30vw' : '23vw',
+            width: clientWidth <= 768 ? '40vw' : '23vw',
             bottom: '8vh',
             right: '27vw',
           }}
