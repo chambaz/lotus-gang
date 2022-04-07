@@ -31,3 +31,10 @@ body {
   font-family: 'Space Mono', monospace;
   overflow-x: hidden;
 }
+
+@supports (-ms-ime-align: auto) {
+  .pinnedLady {
+    position: absolute !important;
+    transform: translateY(-10rem) !important;
+  }
+}
