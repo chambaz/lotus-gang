@@ -73,6 +73,14 @@ const Nav = () => {
                   Library
                 </a>
               </li>
+              <li className="ml-12">
+                <a
+                  href="#"
+                  className="block transition border-b-4 border-transparent cursor-pointer text-lotus-red cursor-emoji"
+                  style={{ transform: 'translateY(4px)' }}>
+                  Shop
+                </a>
+              </li>
               <li className="ml-20">
                 <a
                   href="https://discord.gg/vs8VvHb35k"
@@ -206,6 +214,14 @@ const Nav = () => {
                 className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
                 style={{ transform: 'translateY(4px)' }}>
                 Library
+              </a>
+            </li>
+            <li className="my-4 text-2xl">
+              <a
+                href="#"
+                className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
+                style={{ transform: 'translateY(4px)' }}>
+                Shop <span className="text-sm">(coming soon)</span>
               </a>
             </li>
           </ul>
