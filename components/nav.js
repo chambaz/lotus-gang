@@ -75,9 +75,7 @@ const Nav = () => {
               </li>
               <li className="ml-12">
                 <a
-                  href="https://lotusgang.myshopify.com/collections/all"
-                  target="_blank"
-                  rel="noreferrer"
+                  href="https://lotusgang.myshopify.com/collections/all?preview_theme_id=122419544112"
                   className="block transition border-b-4 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
                   style={{ transform: 'translateY(4px)' }}>
                   Shop
@@ -220,9 +218,7 @@ const Nav = () => {
             </li>
             <li className="my-4 text-2xl">
               <a
-                href="#"
-                target="_blank"
-                rel="noreferrer"
+                href="https://lotusgang.myshopify.com/collections/all?preview_theme_id=122419544112"
                 className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
                 style={{ transform: 'translateY(4px)' }}>
                 Shop
