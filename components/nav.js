@@ -75,7 +75,7 @@ const Nav = () => {
               </li>
               <li className="ml-12">
                 <a
-                  href="#"
+                  href="https://lotusgang.myshopify.com/collections/all"
                   target="_blank"
                   rel="noreferrer"
                   className="block transition border-b-4 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
