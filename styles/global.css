@@ -38,3 +38,13 @@ body {
     transform: translateY(-10rem) !important;
   }
 }
+
+.cursor-emoji {
+  cursor: url(/img/thinking-face-emoji.png) 20 20, pointer;
+  cursor: -webkit-image-set(
+        url(/img/thinking-face-emoji.png) 1x,
+        url(/img/thinking-face-emoji.png) 2x
+      )
+      15 15,
+    pointer;
+}
