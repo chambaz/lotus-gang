@@ -45,7 +45,7 @@ const Nav = () => {
             <Image src="/img/lotus.svg" width={50} height={50} />
           </a>
 
-          <nav className="hidden ml-auto md:block">
+          <nav className="hidden ml-auto lg:block">
             <ul className="flex items-center text-xl font-normal font-lotus-theboldfont text-lotus-red">
               <li>
                 <a
@@ -71,6 +71,16 @@ const Nav = () => {
                   className="block transition border-b-4 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
                   style={{ transform: 'translateY(4px)' }}>
                   Library
+                </a>
+              </li>
+              <li className="ml-12">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block transition border-b-4 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
+                  style={{ transform: 'translateY(4px)' }}>
+                  Shop
                 </a>
               </li>
               <li className="ml-20">
@@ -158,7 +168,7 @@ const Nav = () => {
                 enableBodyScroll(mobileMenuRef.current)
                 setMobileMenuOpen(false)
               }}
-              className="ml-auto text-4xl cursor-pointer md:hidden text-lotus-red"
+              className="ml-auto text-4xl cursor-pointer lg:hidden text-lotus-red"
               style={{ transform: 'translateY(2px)' }}
             />
           )}
@@ -169,7 +179,7 @@ const Nav = () => {
                 disableBodyScroll(mobileMenuRef.current)
                 setMobileMenuOpen(true)
               }}
-              className="ml-auto text-4xl cursor-pointer md:hidden text-lotus-red"
+              className="ml-auto text-4xl cursor-pointer lg:hidden text-lotus-red"
               style={{ transform: 'translateY(2px)' }}
             />
           )}
@@ -206,6 +216,16 @@ const Nav = () => {
                 className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
                 style={{ transform: 'translateY(4px)' }}>
                 Library
+              </a>
+            </li>
+            <li className="my-4 text-2xl">
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
+                style={{ transform: 'translateY(4px)' }}>
+                Shop
               </a>
             </li>
           </ul>
