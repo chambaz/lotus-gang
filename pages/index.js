@@ -29,8 +29,8 @@ const HomePage = () => {
           content="https://www.lotusgang.com/img/share-og.jpg"
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@nytimes" />
-        <meta name="twitter:creator" content="@SarahMaslinNir" />
+        <meta name="twitter:site" content="@LotusGangNFT" />
+        <meta name="twitter:creator" content="@notbunjil" />
         <meta
           name="twitter:title"
           content="Lotus Gang - Art, education, empowerment"
