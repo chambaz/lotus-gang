@@ -4,24 +4,24 @@
 
 @font-face {
   font-family: 'pixelmix';
-  src: url('/fonts/pixelmix.woff') format('woff'),
-    url('/fonts/pixelmix.ttf') format('truetype');
+  src: url('https://www.lotusgang.com/fonts/pixelmix.woff') format('woff'),
+    url('https://www.lotusgang.com/fonts/pixelmix.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'pixelmix-bold';
-  src: url('/fonts/pixelmix-bold.woff') format('woff'),
-    url('/fonts/pixelmix-bold.ttf') format('truetype');
+  src: url('https://www.lotusgang.com/fonts/pixelmix-bold.woff') format('woff'),
+    url('https://www.lotusgang.com/fonts/pixelmix-bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'theboldfont';
-  src: url('/fonts/theboldfont.woff') format('woff'),
-    url('/fonts/theboldfont.ttf') format('truetype');
+  src: url('https://www.lotusgang.com/fonts/theboldfont.woff') format('woff'),
+    url('https://www.lotusgang.com/fonts/theboldfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
