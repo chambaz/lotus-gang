@@ -43,8 +43,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2px 8px 2px 5px;
+  padding: 5px 8px 5px 5px;
   cursor: url(/img/thinking-face-emoji.png) 10 10, pointer;
-  cursor: -webkit-image-set(url(/img/thinking-face-emoji.png) 2x) -10 -10,
-    pointer;
+  cursor: -webkit-image-set(url(/img/thinking-face-emoji.png) 2x) 10 10, pointer;
 }
