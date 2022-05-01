@@ -75,7 +75,7 @@ const Nav = () => {
               </li>
               <li className="ml-12">
                 <a
-                  href="https://lotusgang.myshopify.com/collections/all?preview_theme_id=122419544112"
+                  href="https://lotusgang.myshopify.com/collections/all"
                   className="block transition border-b-4 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
                   style={{ transform: 'translateY(4px)' }}>
                   Shop
